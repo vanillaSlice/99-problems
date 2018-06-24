@@ -14,6 +14,7 @@ import static problems.P11.encode;
 class P11Test {
 
     @Test
+    @DisplayName("should encode a list")
     void shouldEncodeAList() {
         final List<Object> encoded =
                 encode(asList("a", "a", "a", "a", "b", "c", "c", "a", "a", "d", "e", "e", "e", "e"));

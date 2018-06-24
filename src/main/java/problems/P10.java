@@ -9,7 +9,7 @@ import static problems.P09.pack;
 
 class P10 {
 
-    static <T> List<SimpleEntry<Integer, T>> encode(List<T> list) {
+    static <T> List<SimpleEntry<Integer, T>> encode(final List<T> list) {
         requireNonNull(list, "list cannot be null");
 
         return pack(list).stream()

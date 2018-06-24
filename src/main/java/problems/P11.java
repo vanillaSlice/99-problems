@@ -7,7 +7,7 @@ import static java.util.stream.Collectors.toList;
 
 class P11 {
 
-    static <T> List<Object> encode(List<T> list) {
+    static <T> List<Object> encode(final List<T> list) {
         requireNonNull(list, "list cannot be null");
 
         return P10.encode(list).stream()
