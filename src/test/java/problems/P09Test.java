@@ -36,7 +36,6 @@ class P09Test {
         assertEquals(asList("e", "e", "e", "e"), packed.get(5));
     }
 
-
     @Test
     @DisplayName("should throw NullPointerException when passed null")
     void shouldThrowNullPointerExceptionWhenPassedNull() {
