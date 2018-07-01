@@ -1,17 +1,28 @@
 package problems;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 import static java.util.Objects.requireNonNull;
-import static java.util.stream.Collectors.toList;
 
 class P23 {
+
+    private static final Random RANDOM = new Random();
 
     static <T> List<T> randomSelect(final List<T> list, final int n) {
         requireNonNull(list, "list cannot be null");
 
-        return new Random().ints(n, 0, list.size()).mapToObj(list::get).collect(toList());
+        final List<T> copy = new ArrayList<>(list);
+        final List<T> result = new ArrayList<>();
+
+        for (int i = 0; i < n; i++) {
+            final int selected = RANDOM.nextInt(copy.size());
+            result.add(copy.get(selected));
+            copy.remove(selected);
+        }
+
+        return result;
     }
 
 }
