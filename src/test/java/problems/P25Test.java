@@ -12,12 +12,12 @@ import static problems.P25.randomPermutation;
 
 class P25Test {
 
-    @Test
-    @DisplayName("should generate random permutation of elements of a list")
-    void shouldGenerateRandomPermutationOfElementsOfAList() {
-        final List<String> permutation = randomPermutation(asList("a", "b", "c", "d", "e", "f"));
-        assertEquals(6, permutation.size());
-        assertTrue(permutation.containsAll(asList("a", "b", "c", "d", "e", "f")));
-    }
+  @Test
+  @DisplayName("should generate random permutation of elements of a list")
+  void shouldGenerateRandomPermutationOfElementsOfAList() {
+    final List<String> permutation = randomPermutation(asList("a", "b", "c", "d", "e", "f"));
+    assertEquals(6, permutation.size());
+    assertTrue(permutation.containsAll(asList("a", "b", "c", "d", "e", "f")));
+  }
 
 }

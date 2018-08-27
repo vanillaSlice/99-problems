@@ -9,12 +9,12 @@ import static problems.P09.pack;
 
 class P10 {
 
-    static <T> List<SimpleEntry<Integer, T>> encode(final List<T> list) {
-        requireNonNull(list, "list cannot be null");
+  static <T> List<SimpleEntry<Integer, T>> encode(final List<T> list) {
+    requireNonNull(list, "list cannot be null");
 
-        return pack(list).stream()
-                .map(e -> new SimpleEntry<>(e.size(), e.get(0)))
-                .collect(toList());
-    }
+    return pack(list).stream()
+        .map(e -> new SimpleEntry<>(e.size(), e.get(0)))
+        .collect(toList());
+  }
 
 }

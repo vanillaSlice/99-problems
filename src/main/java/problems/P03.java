@@ -6,10 +6,10 @@ import static java.util.Objects.requireNonNull;
 
 class P03 {
 
-    static <T> T kth(final List<T> list, final int k) {
-        requireNonNull(list, "list cannot be null");
+  static <T> T kth(final List<T> list, final int k) {
+    requireNonNull(list, "list cannot be null");
 
-        return list.get(k);
-    }
+    return list.get(k);
+  }
 
 }

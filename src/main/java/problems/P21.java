@@ -7,14 +7,14 @@ import static java.util.Objects.requireNonNull;
 
 class P21 {
 
-    static <T> List<T> insertAt(final List<T> list, final int index, final T item) {
-        requireNonNull(list, "list cannot be null");
+  static <T> List<T> insertAt(final List<T> list, final int index, final T item) {
+    requireNonNull(list, "list cannot be null");
 
-        final List<T> result = new ArrayList<>(list);
+    final List<T> result = new ArrayList<>(list);
 
-        result.add(index - 1, item);
+    result.add(index - 1, item);
 
-        return result;
-    }
+    return result;
+  }
 
 }

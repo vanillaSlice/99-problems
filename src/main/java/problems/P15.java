@@ -8,10 +8,10 @@ import static java.util.stream.Collectors.toList;
 
 class P15 {
 
-    static <T> List<T> duplicate(final List<T> list, final int times) {
-        requireNonNull(list, "list cannot be null");
+  static <T> List<T> duplicate(final List<T> list, final int times) {
+    requireNonNull(list, "list cannot be null");
 
-        return list.stream().flatMap(e -> nCopies(times, e).stream()).collect(toList());
-    }
+    return list.stream().flatMap(e -> nCopies(times, e).stream()).collect(toList());
+  }
 
 }
